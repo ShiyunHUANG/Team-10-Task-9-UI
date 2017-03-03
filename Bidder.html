@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Bidder</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+      form {
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+  <div class="row clearfix">
+    <div class="col-md-8 column">
+      <h1>
+        Generate a Bidding Package
+      </h1>
+      <table class="table">
+        <tbody>
+        <!--A row -->
+          <tr>
+            <td>
+              Origin
+            </td>
+            <td>
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">Pittsburgh</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+          </tr>
+      <!--End a row -->
+      <!--A row -->
+          <tr>
+            <td>
+              Destination
+            </td>
+            <td>
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">Atlanta</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+          </tr>
+      <!--End a row -->
+      <!--A row -->
+          <tr>
+            <td>
+              Lane Type
+            </td>
+            <td>
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">Refrigerator</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+          </tr>
+      <!--End a row -->
+      <!--A row -->
+          <tr>
+            <td>
+              Bid Type
+            </td>
+            <td>
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">XOR</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+          </tr>
+      <!--End a row -->
+      
+        </tbody>
+
+        <!--A new table-->
+<table class="table">
+<h2>Create Discount Condition</h2>
+        <thead>
+          <tr>
+            <th>
+              Condition
+            </th>
+            <th>
+              Range(unit)
+            </th>  
+            <th>
+              Base Price($)
+            </th>   
+            <th>
+              Discount(%)
+            </th>  
+          </tr>
+        </thead>
+        <tbody>
+        <!--A row-->
+          <tr>
+            <td> 
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">Volume</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+            <td>
+              <input name="txtId" type="text" size="7" value="0" />
+              ~
+              <input name="txtId" type="text" size="7" value="60" />
+            </td>
+            <td>
+        
+              <input class="form-control" id="inputEmail3" type="text" value="6" />
+            </td>
+            <td>
+            
+              <input class="form-control" id="inputEmail3" type="email" value="0" />
+            </td>
+            
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td> 
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">Volume</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+            <td>
+              <input name="txtId" type="text" size="7" value="60" />
+              ~
+              <input name="txtId" type="text" size="7" value="100"/>
+            </td>
+            <td>
+              <input class="form-control" id="ex1" type="text" value="6">
+              
+            </td>
+            <td>
+            
+              <input class="form-control" id="inputEmail3" type="text" value="10"/>
+            </td>
+            
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td> 
+              <!--Drop down-->
+              <div class="btn-group">
+              <button class="btn btn-default">None</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+              </div>
+              <!-- End drop down-->
+            </td>
+            <td>
+              <input name="txtId" type="text" size="7" />
+              ~
+              <input name="txtId" type="text" size="7" />
+            </td>
+            <td>
+        
+              <input class="form-control" id="inputEmail3" type="email" />
+            </td>
+            <td>
+            
+              <input class="form-control" id="inputEmail3" type="email" />
+            </td>
+            
+          </tr>
+          <!--End a row-->
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+            <button class="btn btn-default" type="button">Add discount condition</button>
+            </td>
+          </tr>
+          <tr>
+          <div class="checkbox">
+               <label><input type="checkbox" />If multiple requirements are satisfied, the lowest price will be considered.</label>
+            </div>
+          </tr>
+        </tbody>
+      </table>
+        <!--End table-->
+
+<div >
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+           <label class="col-sm-2 control-label" for="inputEmail3">Bundle Name:</label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputEmail3" type="email" />
+          </div>
+        </div>
+        <div class="form-group">
+           <label class="col-sm-2 control-label" for="inputPassword3">Comments: </label>
+          <div class="col-sm-10">
+            <input class="form-control" id="inputPassword3" type="text" />
+          </div>
+        </div>
+        
+      </form>
+    </div>
+
+
+
+      <table class="table">
+      <tbody>
+      <tr>
+        <td align="center" valign="middle">
+          <button class="btn btn-default btn-primary" type="button" >Add another lane</button>
+        </td>
+        <td align="center" valign="middle">
+          <button class="btn btn-default btn-success" type="button">Submit this bundle</button>
+        </td>
+      </tr>
+        </tbody>
+      </table>
+        
+      
+      
+      
+
+      
+    </div>
+    <div class="col-md-4 column">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              My OR Submitted Bundles
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+        <!--A row-->
+          <tr>
+            <td>
+              My Bundle 1
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td>
+              My Bundle 2
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td>
+              My Bundle 3
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+        </tbody>
+      </table>
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>
+              My XOR Submitted Bundles
+            </th>
+            
+          </tr>
+        </thead>
+        <tbody>
+        <!--A row-->
+          <tr>
+            <td>
+              My Bundle 4
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td>
+              My Bundle 5
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+          <!--A row-->
+          <tr>
+            <td>
+              My Bundle 6
+            </td>
+            <td>
+              <button class="btn btn-default btn-primary" type="button">View</button> 
+            </td>
+            <td>
+              <button class="btn btn-default btn-danger" type="button">Delete</button>
+            </td>
+          </tr>
+          <!--End a row-->
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <link rel="stylesheet" href="/Team8/css/footer.css">
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted text-center">Carnegie Mellon University,
+      eBusiness Program Task 9 Team 10</p>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
