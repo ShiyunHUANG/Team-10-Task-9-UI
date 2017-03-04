@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>BidTaker</title>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <style type="text/css">
+        form {
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-md-6 column">
+            <h2>
+              Add a New Requirement
+            </h2>
+            <table class="table">
+              <tbody>
+                <!--A row-->
+                <tr>
+                  <td>
+                    Requirement Name:
+                  </td>
+                  <td>
+                   <input class="form-control" id="inputEmail3" type="text" value="" /> 
+                 </td>
+               </tr>
+               <!--End a row-->
+               <!--A row-->
+               <tr>
+                <td>
+                  Requirement data type:
+                </td>
+                <td>
+                 <!--Drop down-->
+                 <div class="btn-group">
+                  <button class="btn btn-default"
+                  style="width: 320px !important;">Percentage</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                </div>
+                <!-- End drop down-->
+              </td>
+            </tr>
+            <!--End a row-->
+            <!--A row-->
+            <tr>
+              <td>
+                Requirement default value:
+              </td>
+              <td>
+               <input class="form-control" id="inputEmail3" type="text" value="" /> 
+             </td>
+           </tr>
+           <!--End a row-->
+           <!--A row-->
+           <tr>
+            <td>
+              Applicable Range:
+            </td>
+            <td>
+             <!--Drop down-->
+             <div class="btn-group">
+              <button class="btn btn-default" style="width: 320px !important;">All lanes</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            </div>
+            <!-- End drop down--> 
+          </td>
+        </tr>
+        <!--End a row-->
+      </tbody>
+    </table>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td align="center" valign="middle">
+            <button class="btn btn-default btn-primary" type="button" >Add this requirement</button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+
+
+    <h2>
+      Add a New Lane
+    </h2>
+    <table class="table">
+      <tbody>
+        <!--A row-->
+        <tr>
+          <td>
+            Origin City:
+          </td>
+          <td>
+           <input class="form-control" id="inputEmail3" type="text" value="" /> 
+         </td>
+       </tr>
+       <!--End a row-->
+       <!--A row-->
+       <tr>
+        <td>
+          Destination City:
+        </td>
+        <td>
+         <input class="form-control" id="inputEmail3" type="text" value="" /> 
+       </td>
+     </tr>
+     <!--End a row-->
+     <!--A row-->
+     <tr>
+      <td>
+        Weekly Volume:
+      </td>
+      <td>
+       <input class="form-control" id="inputEmail3" type="text" value="" /> 
+     </td>
+   </tr>
+   <!--End a row-->
+   <!--A row-->
+   <tr>
+    <td>
+      Lane Type:
+    </td>
+    <td>
+     <!--Drop down-->
+     <div class="btn-group">
+      <button class="btn btn-default"
+      style="width: 380px !important;">Dry</button> <button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+    </div>
+    <!-- End drop down-->
+  </td>
+</tr>
+<!--End a row-->
+
+</tbody>
+</table>
+<table class="table">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <button class="btn btn-default btn-primary" type="button" >Add lane</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+</div>
+
+<div class="col-md-6 column">
+  <h2>
+    Quick Settings
+  </h2>
+  <table class="table">
+    <tbody>
+      <!--A row-->
+      <tr>
+        <td>
+          Maximum Number of Carriers:
+        </td>
+        <td>
+         <input class="form-control" id="inputEmail3" type="text" value="20" /> 
+       </td>
+     </tr>
+     <!--End a row-->
+     <!--A row-->
+     <tr>
+      <td>
+        Minimum Overall CDOT Rate(%):
+      </td>
+      <td>
+       <input class="form-control" id="inputEmail3" type="text" value="95" /> 
+     </td>
+   </tr>
+   <!--End a row-->
+   <!--A row-->
+   <tr>
+    <td>
+      Minimum Refrigerator Lane CDOT Rate(%):
+    </td>
+    <td>
+     <input class="form-control" id="inputEmail3" type="text" value="98" /> 
+   </td>
+ </tr>
+ <!--End a row-->
+ <!--A row-->
+ <tr>
+  <td>
+    Minimum Dry Lane CDOT Rate(%):
+  </td>
+  <td>
+   <input class="form-control" id="inputEmail3" type="text" value="90" /> 
+ </td>
+</tr>
+<!--End a row-->
+</tbody>
+</table>
+<table class="table">
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <button class="btn btn-default btn-primary" type="button" >Apply Changes</button>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+</div>
+</div>
+</div>
+
+<link rel="stylesheet" href="/Team8/css/footer.css">
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted text-center">Carnegie Mellon University,
+      eBusiness Program Task 9 Team 10</p>
+    </div>
+  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+  </html>
